@@ -1,0 +1,223 @@
+/* Styling untuk tabel */
+.table-wrapper {
+  overflow-x: auto;
+  max-height: 400px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgb(95, 181, 230);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 14px 20px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #444;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.table tbody tr:hover td {
+  transform: scale(1.1);
+  z-index: 1;
+  background-color: #f0f0f0;
+}
+
+/* Styling untuk tombol cari */
+.btn-primary {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgb(95, 181, 230);
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+/* style chat */
+.live-chat-container {
+    cursor: pointer;
+    padding: 15px; /* Increase padding for a more spacious look */
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile .avatar-sm {
+    margin-right: 15px; /* Increase margin for more spacing */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-status {
+    color: green;
+}
+
+.last-message {
+    flex-grow: 1;
+    text-align: right;
+    margin-left: 15px; /* Increase margin for more spacing */
+    color: #777;
+}
+
+.search-container {
+    padding: 10px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.example-chats {
+    margin-top: 20px;
+}
+
+.example-chats .user {
+    font-weight: bold;
+}
+
+.example-chats .message {
+    margin-top: 5px;
+}
+.custom-dropdown {
+width: 350px !important; /* Use !important to override existing styles if necessary */
+}
+
+.chat-container{
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.chat-header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-header > p{
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+.user__chat-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.chat-body {
+  padding: 10px;
+  width: 350px;
+  height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.message {
+  width: fit-content;
+  background-color: #e0e0e0;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+
+.user-message {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+
+.input-container {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+
+.message-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.send-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-close{
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-close:hover{
+  color: #e8ebe9;
+}
+
+.btn-close > i{
+  font-size: 24px;
+}
+.test {
+  display: none;
+}
+.show{
+  display: block;
+}
